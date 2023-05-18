@@ -23,7 +23,7 @@ body {
   }
 }
 
-.rain {
+.chuva {
   position: absolute;
   width: 1rem;
   height: 6rem;
@@ -33,7 +33,7 @@ body {
   z-index: -1;
 }
 
-.drop {
+.animacao {
   width: 1rem;
   height: 5rem;
   background: #ffffff;
@@ -42,88 +42,88 @@ body {
   opacity: 0.2;
 }
 
-.rain1 {
+.chuva1 {
   left: 5rem;
   top: 2rem;
   animation: raining 1s linear infinite both;
 }
 
-.rain2 {
+.chuva2 {
   left: 15rem;
   top: 10rem;
   animation: raining 2s linear infinite both;
 }
 
-.drop2 {
+.animacao2 {
   top: 12rem;
   animation: raining 3s linear infinite both -2s;
 }
 
-.rain3 {
+.chuva3 {
   left: 5rem;
   top: 35rem;
   animation: raining 4s linear infinite both;
 }
 
-.rain4 {
+.chuva4 {
   right: 23rem;
   top: 6rem;
   animation: raining 1s linear infinite both;
 }
 
-.rain5 {
+.chuva5 {
   left: 25rem;
   top: 47rem;
   animation: raining 2s linear infinite both -3s;
 }
 
-.drop5 {
+.animacao5 {
   top: -6rem;
   animation: raining 2s linear infinite both;
 }
 
-.rain6 {
+.chuva6 {
   right: 10rem;
   top: 34rem;
   animation: raining 3s linear infinite both;
 }
 
-.rain7 {
+.chuva7 {
   left: 34rem;
   top: 10rem;
   animation: raining 2s linear infinite both -5s;
 }
 
-.rain8 {
+.chuva8 {
   right: 25rem;
   top: 40rem;
   animation: raining 3s linear infinite both;
 }
 
-.drop8 {
+.animacao8 {
   top: -7rem;
   animation: raining 4s linear infinite both -6s;
 }
 
-.rain9 {
+.chuva9 {
   right: 5rem;
   top: 15.5rem;
   animation: raining 3s linear infinite both;
 }
 
-.rain10 {
+.chuva10 {
   left: 24rem;
   top: -4rem;
   animation: raining 2s linear infinite both -3s;
 }
 
-.drop11 {
+.animacao11 {
   right: 17rem;
   top: 20rem;
   animation: raining 3s linear infinite both;
 }
 
-.drop12 {
+.animacao12 {
   right: 15rem;
   top: 50rem;
   animation: raining 4s linear infinite both -1s;
