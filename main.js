@@ -4,7 +4,8 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const scene = new THREE.Scene();
 scene.fog = new THREE.Fog(0x131148, 10, 300); // nevoa
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
+const listener = new THREE.AudioListener();
+camera.add( listener );
 
 const ambientLight = new THREE.HemisphereLight(0x404040, 0x404040, 1); // luz do "objeto"
 scene.add(ambientLight);
@@ -34,19 +35,17 @@ loader.load( './foguete.gltf', function ( gltf ) {
 	},
 );
 
- /* 
-const listener = new THREE.AudioListener();
-camera.add( listener );
   
 const sound = new THREE.Audio( listener );
 const audioLoader = new THREE.AudioLoader();
-	  audioLoader.load( './audioAmbiente.mp3', function( buffer ) {
+	  audioLoader.load( './beauty.mp3', function( buffer ) {
 		sound.setBuffer( buffer );
 		sound.setLoop(true);
-		sound.setVolume(1);
+		sound.setVolume(0.2);
 		sound.play();
+		console.log("ok");
 });
-*/
+
 
 camera.position.z = 70;
 camera.position.y= 0;
