@@ -14,8 +14,8 @@ const directionalLight = new THREE.DirectionalLight(0xffffdd, 1); // luz de dire
 directionalLight.position.set(-300, 0, 600);
 scene.add(directionalLight);
 
-const pointLight = new THREE.PointLight(0x131148, 2, 100 ); // ponto de luz
-pointLight.position.set(200, -100, 50);
+const pointLight = new THREE.PointLight(0x000080, 2, 200, 2 ); // ponto de luz
+pointLight.position.set(20, -10, 15);
 scene.add(pointLight);
 
 const renderer = new THREE.WebGLRenderer({antialias:true, alpha: true}); //antialias: suaviza o objeto		canal transparente habilitado para mostrar o objeto
@@ -36,7 +36,7 @@ loader.load( './foguete.gltf', function ( gltf ) {
 );
 
   
-const sound = new THREE.Audio( listener );
+const sound = new THREE.Audio( listener ); // inserção do audio
 const audioLoader = new THREE.AudioLoader();
 	  audioLoader.load( './beauty.mp3', function( buffer ) {
 		sound.setBuffer( buffer );
